@@ -919,8 +919,8 @@ export default function ProfilePage() {
                 <div className="pb-4 border-b border-gray-100">
                   <div className="flex items-start justify-between mb-2">
                     <div className="flex-1">
-                      <h4 className="font-bold text-gray-900">Boarding</h4>
-                      <p className="text-xs text-gray-600">in the sitter's home</p>
+                      <h4 className="font-bold text-gray-900">Dog Boarding</h4>
+                      <p className="text-xs text-gray-600">in our home</p>
                     </div>
                     <div className="text-right">
                       <div className="text-2xl font-bold text-blue-600">$75</div>
@@ -939,7 +939,7 @@ export default function ProfilePage() {
                       </div>
                       <div className="flex justify-between">
                         <span>Puppy Rate</span>
-                        <span className="font-semibold">$75/night</span>
+                        <span className="font-semibold">$85/night</span>
                       </div>
                       <div className="flex justify-between">
                         <span>Cat Care</span>
@@ -965,7 +965,7 @@ export default function ProfilePage() {
                       <p className="text-xs text-gray-600">in your home</p>
                     </div>
                     <div className="text-right">
-                      <div className="text-2xl font-bold text-blue-600">$75</div>
+                      <div className="text-2xl font-bold text-blue-600">$85</div>
                       <div className="text-xs text-gray-600">per night</div>
                     </div>
                   </div>
@@ -973,7 +973,7 @@ export default function ProfilePage() {
                     <div className="text-xs text-gray-600 space-y-2 mt-3 pl-3 border-l-2 border-blue-100">
                       <div className="flex justify-between">
                         <span>Holiday Rate</span>
-                        <span className="font-semibold">$90/night</span>
+                        <span className="font-semibold">$100/night</span>
                       </div>
                       <div className="flex justify-between">
                         <span>Additional Dog</span>
@@ -981,7 +981,7 @@ export default function ProfilePage() {
                       </div>
                       <div className="flex justify-between">
                         <span>Puppy Rate</span>
-                        <span className="font-semibold">$75/night</span>
+                        <span className="font-semibold">$85/night</span>
                       </div>
                       <div className="flex justify-between">
                         <span>Cat Care</span>
@@ -1015,7 +1015,7 @@ export default function ProfilePage() {
                     <div className="text-xs text-gray-600 space-y-2 mt-3 pl-3 border-l-2 border-blue-100">
                       <div className="flex justify-between">
                         <span>60 minute rate</span>
-                        <span className="font-semibold">+$25/visit</span>
+                        <span className="font-semibold">+$30/visit</span>
                       </div>
                       <div className="flex justify-between">
                         <span>Holiday Rate</span>
@@ -1050,7 +1050,7 @@ export default function ProfilePage() {
                   <div className="flex items-start justify-between mb-2">
                     <div className="flex-1">
                       <h4 className="font-bold text-gray-900">Doggy Day Care</h4>
-                      <p className="text-xs text-gray-600">in the sitter's home</p>
+                      <p className="text-xs text-gray-600">in our home</p>
                     </div>
                     <div className="text-right">
                       <div className="text-2xl font-bold text-blue-600">$75</div>
@@ -1069,7 +1069,7 @@ export default function ProfilePage() {
                       </div>
                       <div className="flex justify-between">
                         <span>Puppy Rate</span>
-                        <span className="font-semibold">$75/day</span>
+                        <span className="font-semibold">$90/day</span>
                       </div>
                     </div>
                   )}
@@ -1080,10 +1080,10 @@ export default function ProfilePage() {
                   <div className="flex items-start justify-between mb-2">
                     <div className="flex-1">
                       <h4 className="font-bold text-gray-900">30 minute Dog Walking</h4>
-                      <p className="text-xs text-gray-600">in your neighborhood</p>
+                      <p className="text-xs text-gray-600">In your neighborhood</p>
                     </div>
                     <div className="text-right">
-                      <div className="text-2xl font-bold text-blue-600">$35</div>
+                      <div className="text-2xl font-bold text-blue-600">$40</div>
                       <div className="text-xs text-gray-600">per walk</div>
                     </div>
                   </div>
@@ -1103,7 +1103,7 @@ export default function ProfilePage() {
                       </div>
                       <div className="flex justify-between">
                         <span>Puppy Rate</span>
-                        <span className="font-semibold">$40/walk</span>
+                        <span className="font-semibold">$50/walk</span>
                       </div>
                     </div>
                   )}
