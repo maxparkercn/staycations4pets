@@ -1,0 +1,58 @@
+name: react2shell-patch
+on:
+  push:
+    branches:
+      - react2shell-patch
+  workflow_dispatch: {}
+
+jobs:
+  update-lock-and-build:
+    name: Update lockfile and build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Save npm audit (non-failing)
+        run: npm audit --json > audit-report.json || true
+
+      - name: Build
+        run: npm run build
+
+      - name: Commit updated package-lock.json if changed
+        run: |
+          if [ -n "$(git status --porcelain package-lock.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add package-lock.json audit-report.json || true
+            git commit -m "chore: update package-lock.json and audit report after pinning next" || true
+            git push origin react2shell-patch || true
+          fi
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore: update lockfile and audit report"
+          title: "chore: React2Shell patch — pin next and update lockfile"
+          body: |
+            This automated PR updates package-lock.json after pinning Next to 16.1.6 to address the React2Shell advisory (CVE-2025-55182).
+
+            What this workflow does:
+            - runs npm ci to install exact dependencies
+            - runs npm audit and saves audit-report.json
+            - runs npm run build to ensure the project builds
+            - commits package-lock.json and audit-report.json if they changed
+            - opens this pull request with the results
+          base: main
+          head: react2shell-patch
