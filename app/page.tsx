@@ -999,52 +999,6 @@ export default function ProfilePage() {
                   )}
                 </div>
 
-                {/* Drop-In Visits */}
-                <div className="pb-4 border-b border-gray-100">
-                  <div className="flex items-start justify-between mb-2">
-                    <div className="flex-1">
-                      <h4 className="font-bold text-gray-900">30 minute Drop-In Visit</h4>
-                      <p className="text-xs text-gray-600">visits in your home</p>
-                    </div>
-                    <div className="text-right">
-                      <div className="text-2xl font-bold text-blue-600">$45</div>
-                      <div className="text-xs text-gray-600">per visit</div>
-                    </div>
-                  </div>
-                  {showAllServices && (
-                    <div className="text-xs text-gray-600 space-y-2 mt-3 pl-3 border-l-2 border-blue-100">
-                      <div className="flex justify-between">
-                        <span>60 minute rate</span>
-                        <span className="font-semibold">+$30/visit</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span>Holiday Rate</span>
-                        <span className="font-semibold">$60/visit</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span>Additional Dog</span>
-                        <span className="font-semibold">+$30/dog/visit</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span>Puppy Rate</span>
-                        <span className="font-semibold">$45/visit</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span>Cat Care</span>
-                        <span className="font-semibold">$45/visit</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span>Additional Cat</span>
-                        <span className="font-semibold">+$20/cat/visit</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span>14+ days</span>
-                        <span className="font-semibold">$40/visit</span>
-                      </div>
-                    </div>
-                  )}
-                </div>
-
                 {/* Doggy Day Care */}
                 <div className="pb-4 border-b border-gray-100">
                   <div className="flex items-start justify-between mb-2">
